@@ -6,15 +6,16 @@
   -webkit-font-smoothing: antialiased;
 }
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
   height: 100%;
 }
 body {
   height: 100%;
-  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 16px;
   letter-spacing: -1px;
-  color: #444;
+  color: #1f1f1f;
   white-space: normal;
   word-break: break-all;
 }
@@ -23,9 +24,9 @@ select,
 textarea {
   box-sizing: border-box;
   font-size: 15px;
-  font-family: "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   letter-spacing: -1px;
-  color: #444;
+  color: #1f1f1f;
   -webkit-appearance: none;
 }
 textarea {
@@ -42,16 +43,16 @@ a {
   text-decoration: none;
 }
 a:link {
-  color: #444;
+  color: #1f1f1f;
 }
 a:visited {
-  color: #444;
+  color: #1f1f1f;
 }
 a:hover {
-  color: #444;
+  color: #1f1f1f;
 }
 a:active {
-  color: #444;
+  color: #1f1f1f;
 }
 .cf::after {
   content: "";
@@ -161,7 +162,7 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,
+/* article,
 aside,
 details,
 figcaption,
@@ -173,7 +174,7 @@ menu,
 nav,
 section {
   display: block;
-}
+} */
 body {
   line-height: 1;
 }
@@ -244,15 +245,15 @@ table {
 }
 .skipnavi li a:focus,
 .skipnavi li a:active {
-    position: absolute;
-    left: 0;
-    top: 50px;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    text-align: center;
-    text-indent: 0px;
-    font-size: 12px;
-    font-weight: bold;
-    background: #f2f2f2;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: block;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  text-indent: 0px;
+  font-size: 12px;
+  font-weight: bold;
+  background: #f2f2f2;
 }

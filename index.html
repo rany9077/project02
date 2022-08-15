@@ -6,83 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>포카리스웨트</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./font/font.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gnb.js"></script>
   </head>
   <body>
-    <div class="wrap">
-      <header id="header">
-        <nav class="navbar inner">
-          <div class="nav_top">
-            <h1 class="logo">
-              <a href="#">LOGO</a>
-            </h1>
-          </div>
-          <div class="nav_list">
-            <ul class="depth_1">
-              <li>
-                <a href="#">SINCE1987</a>
-              </li>
-              <li>
-                <a href="#">PRODUCT</a>
-                <ul class="depth_2">
-                  <li><a href="#">포카리스웨트</a></li>
-                  <li><a href="#">포카리스웨트 이온워터</a></li>
-                  <li><a href="#">연혁</a></li>
-                  <li><a href="#">BI</a></li>
-                  <li><a href="#">패키지</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">MEDIA</a>
-                <ul class="depth_2">
-                  <li><a href="#">모델 TVCF</a></li>
-                  <li><a href="#">캠페인&프로모션</a></li>
-                  <li><a href="#">스웨트마켓</a></li>
-                  <li><a href="#">언론자료</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">SCIENCE</a>
-                <ul class="depth_2">
-                  <li><a href="#">스포츠 사이언스</a></li>
-                  <li><a href="#">스포츠 활동</a></li>
-                  <li><a href="#">스포츠 과학정보</a></li>
-                  <li><a href="#">ARTICLE</a></li>
-                  <li><a href="#">FAQ</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">COMMUNITY</a>
-                <ul class="depth_2">
-                  <li><a href="#">SOCIAL</a></li>
-                  <li><a href="#">갤러리</a></li>
-                  <li><a href="#">스토리</a></li>
-                  <li><a href="#">헬스라이프</a></li>
-                  <li><a href="#">이벤트</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#">GLOBAL</a>
-                <ul class="depth_2">
-                  <li><a href="#">글로벌 네트워크</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="main_visual">
-          <div>
-            <img src="./images/bg_history_section1.jpg" alt="" />
-          </div>
+    <div id="wrap">
+      <header>
+        <div class="logo">
+          <h1>
+            <a href="#">logo</a>
+          </h1>
         </div>
+        <nav>
+          <ul class="depth_1">
+            <li>
+              <a href="#">SINCE1987</a>
+            </li>
+            <li>
+              <a href="#">PRODUCT</a>
+              <ul class="depth_2">
+                <li><a href="#">포카리스웨트</a></li>
+                <li><a href="#">포카리스웨트 이온워터</a></li>
+                <li><a href="#">연혁</a></li>
+                <li><a href="#">BI</a></li>
+                <li><a href="#">패키지</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">MEDIA</a>
+              <ul class="depth_2">
+                <li><a href="#">모델 TVCF</a></li>
+                <li><a href="#">캠페인&프로모션</a></li>
+                <li><a href="#">스웨트마켓</a></li>
+                <li><a href="#">언론자료</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">SCIENCE</a>
+              <ul class="depth_2">
+                <li><a href="#">스포츠 사이언스</a></li>
+                <li><a href="#">스포츠 활동</a></li>
+                <li><a href="#">스포츠 과학정보</a></li>
+                <li><a href="#">ARTICLE</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">COMMUNITY</a>
+              <ul class="depth_2">
+                <li><a href="#">SOCIAL</a></li>
+                <li><a href="#">갤러리</a></li>
+                <li><a href="#">스토리</a></li>
+                <li><a href="#">헬스라이프</a></li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">GLOBAL</a>
+              <ul class="depth_2">
+                <li><a href="#">글로벌 네트워크</a></li>
+              </ul>
+            </li>
+            <li class="mall_icon">
+              <a href="#">MALL</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <!-- // #header -->
-      <div class="content">
-        <div class="inner"></div>
+      <div class="main_visual">
+        <div class="swiper mySwiper main_rolling_pc">
+          <ul class="swiper-wrapper viewImgList">
+            <li class="swiper-slide imglist01">
+              <div class="roll_content">
+                <a href="#"></a>
+                <h2 class="roll_text">POCARI SWEAT</h2>
+                <div class="more_button">MORE VIEW+</div>
+              </div>
+            </li>
+            <li class="swiper-slide imglist02">
+              <div class="roll_content">
+                <a href="#"></a>
+                <div class="sub_img01"><img src="./images/sub_img01.png" alt="이온워터" /></div>
+                <div class="sub_img02 slide"><img src="./images/sub_img02.png" alt="이온워터 텍스트" /></div>
+                <div class="sub_img03"><img src="./images/sub_img03.png" alt="이온워터 텍스트" /></div>
+                <div class="more_button">MORE VIEW+</div>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- // .main_visual -->
+      <div class="content_wrap">
+        <section class="content_1 container">
+          <h2>SINCE 1987</h2>
+          <div class="content1_slide"><img src="./images/content1_animation.jpg" alt="" width="620" /></div>
+          <div class="content1_bg">
+            <img src="./images/content1_bg.jpg" alt="" width="600" />
+            <div class="content1_text">
+              <h3>스포츠 음료</h3>
+              <p>SPORTS<br />DRINKS</p>
+              <span>1987년 여름 포카리스웨트가 세상에 나왔습니다</span>
+            </div>
+          </div>
+        </section>
+        <section class="content_2">
+          <div class="container">
+            <h2>SOCIAL HUB</h2>
+            <div class="social">
+              <div class="sns_link">
+                <a href="#"> <img src="/images/main_sns1.png" alt="" width="25"> 인스타</a>
+                <a href="#"> <img src="/images/main_sns2.png" alt="" width="25"> 유튜브</a>
+                <a href="#"> <img src="/images/main_sns3.png" alt="" width="25"> 페이스북</a>
+              </div>
+              <div class="insta_btn">
+                <button class="w-btn-outline" type="button">Instagram <img src="images/right.png" alt="접속아이콘" width="10" /></button>
+              </div>
+              <div class="picture">
+                <div>
+                  <a href="#"><img class="sns1" src="images/content2_sns1.png" alt="바닷가 배경 포카리스웨트" width="290" /></a>
+                  <p>#제주도 #바닷가 #포카리스웨트 #시원함</p>
+                </div>
+                <div>
+                  <a href="#"><img class="sns2" src="images/content2_sns2.png" alt="포카리스웨트 자판기" width="290" /></a>
+                  <p>#포카리스웨트 #자판기 #POCARI SWEAT</p>
+                </div>
+                <div>
+                  <a href="#"><img class="sns3" src="images/content2_sns3.png" alt="포카리스웨트 병" width="290" /></a>
+                  <p>#유리병 #포카리스웨트 #청량함</p>
+                </div>
+                <div>
+                  <a href="#"><img class="sns4" src="images/content2_sns4.png" alt="계곡 배경 포카리스웨트" width="290" /></a>
+                  <p>#계곡 #갈증해소 #포카리스웨트</p>
+                </div>
+              </div>
+              <div class="youtube_btn">
+                <button class="w-btn-outline" type="button">Youtube <img src="images/right.png" alt="접속아이콘" width="10" /></button>
+              </div>
+              <div class="youtube">
+                <div>
+                  <a href="#"><img src="images/youtube_1.png" alt="" width="350" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="images/youtube_2.png" alt="" width="350" /></a>
+                </div>
+                <div>
+                  <a href="#"><img src="images/youtube_3.png" alt="" width="350" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="content_3 container">
+          <h2>With <span class="title_small">동아오츠카</span></h2>
+          <p>모두가 즐길 수 있도록 언제나 건강을 생각합니다</p>
+          <div class="circle_img">
+            <img src="images/content3_0.png" alt=""></img>
+            <img src="images/content3_1.png" alt=""></img>
+            <img src="images/content3_2.png" alt=""></img>
+            <img src="images/content3_3.png" alt=""></img>
+            <img src="images/content3_4.png" alt=""></img>
+            <img src="images/content3_5.png" alt=""></img>
+            <img src="images/content3_6.png" alt=""></img>
+            <img src="images/content3_7.png" alt=""></img>
+          </div>
+        </section>
       </div>
       <!-- // #content -->
-      <footer><div class="footer"></div></footer>
+      <footer>
+        <div class="bottom_menu">
+          <ul>
+            <li><span>PRODUCT</span></li>
+            <li><a href="#">포카리스웨트</a></li>
+            <li><a href="#">포카리스웨트 이온워터</a></li>
+            <li><a href="#">연혁</a></li>
+            <li><a href="#">BI</a></li>
+            <li><a href="#">패키지</a></li>
+          </ul>
+          <ul>
+            <li><span>MEDIA</span></li>
+            <li><a href="#">모델 TVCF</a></li>
+            <li><a href="#">캠페인&프로모션</a></li>
+            <li><a href="#">스웨트마켓</a></li>
+            <li><a href="#">언론자료</a></li>
+          </ul>
+          <ul>
+            <li><span>COMMUNITY</span></li>
+            <li><a href="#">SOCIAL</a></li>
+            <li><a href="#">갤러리</a></li>
+            <li><a href="#">스토리</a></li>
+            <li><a href="#">헬스라이프</a></li>
+            <li><a href="#">이벤트</a></li>
+          </ul>
+          <ul>            
+            <li><span>GLOBAL</span></li>
+            <li><a href="#">글로벌 네트워크</a></li>
+          </ul>
+          <ul>
+            <li><span><a href="">SINCE1987</a></span></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          <p>Copyright ⓒ2017 donga-Otsuka co, ltd. All rights reserved</p>
+        </div>
+      </footer>
     </div>
-    <!-- // #wrap -->
+    <script src="./js/swiper.js"></script>
   </body>
 </html>

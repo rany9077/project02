@@ -1,0 +1,437 @@
+.container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  /* background: rgba(0, 0, 200, 0.5); */
+  position: relative;
+}
+header {
+  position: absolute;
+  overflow: hidden;
+  z-index: 999;
+  margin: auto;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding-bottom: 8px;
+}
+header h1 {
+  margin: 15px;
+  position: relative;
+  height: 50px;
+}
+header h1 > a {
+  background: url(../images/logo.png) no-repeat center;
+  background-size: 60%;
+  font-size: 0;
+  width: 200px;
+  line-height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+nav {
+  position: relative;
+  width: 960px;
+  margin: auto;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 30px;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: -0.9px;
+  font-size: 16px;
+  font-weight: 500;
+}
+nav > ul > li ul {
+  position: absolute;
+  width: 100%;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 13px;
+}
+nav .mall_icon {
+  text-indent: -99999%;
+  position: relative;
+}
+nav .mall_icon > a {
+  background: url(../images/shopping-cart.png) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  padding: 5px;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.depth_1 > li > a:hover {
+  color: #111;
+  font-weight: 600;
+}
+.depth_2 > li a:hover {
+  color: #0052e8;
+  padding: 3px;
+}
+
+/* main_visual */
+.main_visual ul .imglist01 a {
+  background: url(../images/main_01.jpg) no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+.main_visual .roll_text {
+  position: absolute;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: "Roboto";
+  color: #fff;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  top: 37%;
+  left: 37%;
+}
+.main_visual .swiper-slide.imglist01 .more_button {
+  font-family: "Roboto";
+  position: absolute;
+  border: 1px solid;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 0.02em;
+}
+.main_visual .more_button:hover {
+  box-shadow: 0px 5px 15px rgba(0, 82, 232, 0.7);
+  margin-top: 5px;
+}
+.main_visual ul .imglist02 a {
+  background: url(../images/main_02.jpg) no-repeat;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+.main_visual .imglist02 .sub_img01 {
+  position: absolute;
+  top: 28%;
+  right: 16%;
+  width: 500px;
+  height: 708px;
+}
+.main_visual .imglist02 .sub_img02 {
+  position: absolute;
+  top: 46%;
+  left: 38%;
+  width: 500px;
+}
+.main_visual .imglist02 .sub_img03 {
+  position: absolute;
+  top: 28%;
+  left: 0;
+  width: 500px;
+}
+.main_visual .swiper-slide.imglist02 .more_button {
+  font-family: "Roboto";
+  position: absolute;
+  border: 1px solid;
+  color: #0052e8;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 20px;
+  line-height: 50px;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%);
+  letter-spacing: 0.02em;
+}
+
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100vh;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper-slide.swiper-slide-active h2 {
+  animation: text 1s 0.3s both;
+}
+.swiper-slide.swiper-slide-active .slide {
+  animation: text 1s 0.3s both;
+}
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  margin: 50px;
+  color: #dfe1e5;
+  border: 1px solid #dfe1e5;
+  padding: 5px 15px;
+}
+.swiper-pagination {
+  color: #fff;
+}
+
+/* content_1 */
+section.content_1 > h2 {
+  font-size: 13em;
+  font-weight: 900;
+  font-family: "Roboto";
+  color: #dfe1e5;
+  text-align: center;
+  padding-top: 20px;
+}
+.content1_slide {
+  position: absolute;
+  top: 28.5%;
+  animation: slide 2s ease-out;
+}
+@keyframes slide {
+  from {
+    left: -700px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+/* @keyframes disappear {
+  from {
+    left: -10%;
+    opacity: 1;
+  }
+  to {
+    left: -700px;
+    opacity: 0;
+  }
+} */
+.content1_bg {
+  position: relative;
+  top: 5%;
+  left: 50%;
+}
+.content1_text {
+  top: 40%;
+  left: 15%;
+  position: absolute;
+  color: #fff;
+  text-align: center;
+}
+.content1_text h3 {
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+.content1_text > p {
+  font-size: 1.7em;
+  font-weight: 900;
+  font-family: "Roboto";
+  letter-spacing: 0.5em;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.content1_text > span {
+  font-size: 0.5em;
+  letter-spacing: 0.3em;
+}
+
+/* content_2 */
+section.content_2 {
+  background: linear-gradient(rgba(0, 82, 232, 0.5), rgba(0, 82, 232, 0.1));
+  width: 100%;
+}
+.content_2 .container > h2 {
+  font-size: 13em;
+  font-weight: 900;
+  font-family: "Roboto";
+  color: #dfe1e5;
+  padding-top: 20px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+.content_2 .sns_link {
+  display: inline-block;
+  float: right;
+  font-size: 0;
+  height: 35px;
+  line-height: 35px;
+  padding-top: 5px;
+}
+.content_2 .sns_link a {
+  margin-left: 15px;
+}
+.content_2 .picture {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.content_2 .insta_btn,
+.youtube_btn {
+  margin: 10px 0;
+}
+.content_2 .w-btn-outline {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-family: "Nanum Gothic", sans-serif;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.25s;
+}
+.content_2 .w-btn-outline:hover {
+  background-color: #0052e8;
+  color: #fff;
+  letter-spacing: 2px;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.content_2 .social p {
+  margin-top: 10px;
+}
+.content_2 .youtube {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* content_3 */
+section.content_3 > h2 {
+  font-size: 13em;
+  font-weight: 900;
+  font-family: "Roboto";
+  color: #dfe1e5;
+  text-align: center;
+  padding-top: 20px;
+  letter-spacing: -0.03em;
+  text-align: center;
+}
+section.content_3 .title_small {
+  font-size: 0.8em;
+}
+section.content_3 p {
+  text-align: center;
+  margin: 30px;
+  font-size: 1.2em;
+  font-family: "Nanum Gothic", sans-serif;
+  position: relative;
+  color: #1f1f1f;
+}
+section.content_3 p:after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 380px;
+  margin: -5px auto;
+  background: rgba(0, 82, 232, 0.4);
+}
+section.content_3 > div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 948px;
+  margin: auto;
+  padding-top: 50px;
+}
+section.content_3 img {
+  border: 10px solid rgba(0, 82, 232, 0.1);
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+section.content_3 img:hover {
+  box-shadow: 0px 0px 15px rgba(0, 82, 232, 0.5);
+  transition: all 0.5s;
+  margin-top: 10px;
+}
+
+/* footer */
+footer {
+  background: #1f1f1f;
+  width: 100%;
+  height: 400px;
+  color: #dfe1e5;
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 0.01em;
+}
+.bottom_menu {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.bottom_menu ul {
+  margin-top: 80px;
+}
+.bottom_menu li > span {
+  font-size: 1.1em;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 30px;
+  display: block;
+  font-weight: 600;
+}
+.bottom_menu li a {
+  color: #888;
+  margin-bottom: 13px;
+  display: block;
+  font-size: 0.9em;
+}
+.bottom_menu ul:last-child a {
+  color: #dfe1e5;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  padding-bottom: 30px;
+  display: block;
+  font-weight: 600;
+}
+.bottom_menu li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  text-align: center;
+  margin: 80px auto;
+  color: #888;
+}
