@@ -1,6 +1,5 @@
 .container {
   max-width: 1200px;
-  height: 100vh;
   margin: 0 auto;
   /* background: rgba(0, 0, 200, 0.5); */
   position: relative;
@@ -31,6 +30,12 @@ header h1 > a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+header .header_area .openMognb {
+  display: none;
+}
+.header_menu .closePop {
+  display: none;
 }
 nav {
   position: relative;
@@ -216,61 +221,37 @@ section.content_1 > h2 {
   font-family: "Roboto";
   color: #dfe1e5;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 60px;
 }
-.content1_slide {
-  position: absolute;
-  top: 28.5%;
-  animation: slide 2s ease-out;
+.content_1 .content1_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
 }
-@keyframes slide {
-  from {
-    left: -700px;
-    opacity: 0;
-  }
-  to {
-    left: 0;
-    opacity: 1;
-  }
-}
-/* @keyframes disappear {
-  from {
-    left: -10%;
-    opacity: 1;
-  }
-  to {
-    left: -700px;
-    opacity: 0;
-  }
-} */
-.content1_bg {
-  position: relative;
-  top: 5%;
-  left: 50%;
-}
-.content1_text {
-  top: 40%;
-  left: 15%;
+.content_1 .right_text {
+  top: 50%;
+  right: 10%;
   position: absolute;
   color: #fff;
   text-align: center;
 }
-.content1_text h3 {
+.right_text h3 {
   font-weight: 900;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.4em;
   margin-bottom: 20px;
 }
-.content1_text > p {
+.right_text > p {
   font-size: 1.7em;
   font-weight: 900;
   font-family: "Roboto";
-  letter-spacing: 0.5em;
+  letter-spacing: 0.6em;
   margin-bottom: 20px;
   line-height: 1.2;
 }
-.content1_text > span {
-  font-size: 0.5em;
-  letter-spacing: 0.3em;
+.right_text > span {
+  /* font-size: 1em; */
+  letter-spacing: 0.1em;
 }
 
 /* content_2 */
@@ -278,17 +259,19 @@ section.content_2 {
   background: linear-gradient(rgba(0, 82, 232, 0.5), rgba(0, 82, 232, 0.1));
   width: 100%;
 }
+.content_2 .social {
+  margin-top: -20px;
+}
 .content_2 .container > h2 {
   font-size: 13em;
   font-weight: 900;
   font-family: "Roboto";
   color: #dfe1e5;
-  padding-top: 20px;
+  padding-top: 50px;
   letter-spacing: -0.03em;
   text-align: center;
 }
 .content_2 .sns_link {
-  display: inline-block;
   float: right;
   font-size: 0;
   height: 35px;
@@ -299,15 +282,14 @@ section.content_2 {
   margin-left: 15px;
 }
 .content_2 .picture {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 30px;
+  margin-bottom: 25px;
 }
 .content_2 .insta_btn,
 .youtube_btn {
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
 .content_2 .w-btn-outline {
   position: relative;
@@ -327,11 +309,26 @@ section.content_2 {
   cursor: pointer;
 }
 .content_2 .social p {
-  margin-top: 10px;
+  margin-top: -20px;
+  font-family: "Nanum Gothic", sans-serif;
+  color: #0052e8;
+  position: relative;
+  z-index: 2;
+}
+.content_2 .social p:before {
+  content: "";
+  display: block;
+  height: 27px;
+  width: 290px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: -10px 0;
+  position: absolute;
+  z-index: -1;
 }
 .content_2 .youtube {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 
 /* content_3 */
@@ -341,7 +338,7 @@ section.content_3 > h2 {
   font-family: "Roboto";
   color: #dfe1e5;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 50px;
   letter-spacing: -0.03em;
   text-align: center;
 }
@@ -364,12 +361,11 @@ section.content_3 p:after {
   margin: -5px auto;
   background: rgba(0, 82, 232, 0.4);
 }
-section.content_3 > div {
+section.content_3 .circle_img .circle_top,
+section.content_3 .circle_img .circle_bottom {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 948px;
-  margin: auto;
   padding-top: 50px;
 }
 section.content_3 img {
@@ -384,6 +380,9 @@ section.content_3 img:hover {
   box-shadow: 0px 0px 15px rgba(0, 82, 232, 0.5);
   transition: all 0.5s;
   margin-top: 10px;
+}
+section.content_3 .circle_img {
+  margin-bottom: 30px;
 }
 
 /* footer */
@@ -434,4 +433,314 @@ footer {
   text-align: center;
   margin: 80px auto;
   color: #888;
+}
+
+/* ==========================
+         MEDIA QUERY 
+============================= */
+
+/* ================ 태블릿 ~ 랩탑 ================ */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #wrap .container {
+    width: 100%;
+  }
+  header {
+    text-align: center;
+    z-index: 200;
+  }
+  header h1 {
+    width: 200px;
+    margin: 30px auto;
+  }
+  header .header_area .openMOgnb {
+    display: block;
+    width: 23px;
+    height: 16px;
+    float: right;
+    margin: -65px 40px;
+  }
+  header .header_area .openMOgnb a span {
+    box-sizing: border-box;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background: #0052e8;
+  }
+  .header_cont .closePop {
+    display: block;
+    position: absolute;
+    top: -15%;
+    left: 5%;
+  }
+  .header_cont .closePop a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/images/close.png) no-repeat;
+    background-size: 23px;
+  }
+  header .header_cont {
+    display: none;
+    width: 100%;
+  }
+  .header_cont .depth_1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .depth_1 li {
+    margin: 20px;
+  }
+  .depth_1 > li:hover {
+    text-decoration: underline;
+  }
+  .header_cont .depth_2 {
+    display: none;
+    opacity: 0;
+  }
+  /* main_visual */
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+  .swiper .roll_text {
+    margin-left: -130px;
+  }
+  .swiper-slide.imglist02 .sub_img01 {
+    z-index: 1;
+  }
+  .swiper-slide .more_button {
+    z-index: 999;
+  }
+  /* content_wrap */
+  section.content_1 > h2,
+  section.content_3 > h2 {
+    font-size: 8em;
+  }
+  section.content_2 .container > h2 {
+    font-size: 8em;
+  }
+  .content_1 {
+    padding-top: 150px;
+  }
+  .content_1 .content1_img {
+    margin: 50px 0 0 10px;
+  }
+  .content_1 img {
+    width: 95%;
+  }
+  .content_1 .right_img {
+    position: relative;
+  }
+  .content_1 .right_text {
+    font-size: 0.8em;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+  }
+  .content_2 .social {
+    margin-top: 35px;
+  }
+  .content_2 .w-btn-outline {
+    margin-top: 10px;
+    margin-left: 30px;
+  }
+  .content_2 .sns_link {
+    margin-right: 35px;
+    padding-top: 15px;
+  }
+  .content_2 .picture {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30px;
+  }
+  .content_2 .picture img {
+    width: 90%;
+  }
+  .content_2 p {
+    letter-spacing: -1.5px;
+  }
+  .content_2 .social p:before {
+    content: "";
+    display: block;
+    height: 27px;
+    width: 222px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: -10px 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .content_2 img.sns4,
+  .content_2 .sns4_img p {
+    display: none;
+  }
+  .content_2 .youtube {
+    margin: 0 27px;
+  }
+  .content_2 .youtube3_img {
+    display: none;
+  }
+  .content_3 .circle_img {
+    padding: 0 15px;
+  }
+}
+
+/* ================ 모바일 ================ */
+@media screen and (max-width: 480px) {
+  #wrap .container {
+    width: 100%;
+  }
+  header {
+    text-align: center;
+    z-index: 200;
+  }
+  header h1 {
+    width: 200px;
+    margin: 30px auto;
+  }
+  header .header_area .openMOgnb {
+    display: block;
+    width: 23px;
+    height: 16px;
+    float: right;
+    margin: -65px 30px;
+  }
+  header .header_area .openMOgnb a span {
+    box-sizing: border-box;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: 10px;
+    background: #0052e8;
+  }
+  .header_cont .closePop {
+    display: block;
+    position: absolute;
+    top: -15%;
+    left: 5%;
+  }
+  .header_cont .closePop a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: url(/images/close.png) no-repeat;
+    background-size: 23px;
+  }
+  header .header_cont {
+    display: none;
+    width: 100%;
+  }
+  .header_cont .depth_1 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .depth_1 li {
+    margin: 20px auto;
+  }
+  .depth_1 > li:hover {
+    text-decoration: underline;
+  }
+  .header_cont .depth_2 {
+    display: none;
+    opacity: 0;
+  }
+  /* main_visual */
+  .swiper .swiper-button-next,
+  .swiper .swiper-button-prev {
+    display: none;
+  }
+  .swiper .roll_text {
+    margin-left: -130px;
+    font-size: 2.7em;
+    margin-right: 50px;
+  }
+  .swiper-slide.imglist02 .sub_img01 {
+    z-index: 1;
+  }
+  .swiper-slide .more_button {
+    z-index: 999;
+  }
+  .swiper-slide .sub_img02.slide {
+    z-index: 9999;
+    position: absolute;
+    top: 15%;
+    margin-left: -190px;
+  }
+  section.content_1 > h2,
+  section.content_3 > h2 {
+    font-size: 5em;
+  }
+  section.content_2 .container > h2 {
+    font-size: 5em;
+  }
+  .content_1 {
+    margin-top: 50px;
+  }
+  .content1_img {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_1 .right_text {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    font-size: 1.4em;
+  }
+  .content_1 .right_text span {
+    line-height: 1.6;
+  }
+  .content_2 .social {
+    padding-bottom: 20px;
+  }
+  .content_2 .insta_btn > .w-btn-outline {
+    margin: 50px 0 0 50px;
+    font-size: 1em;
+  }
+  .content_2 .youtube_btn > .w-btn-outline {
+    margin: 20px 0 0 50px;
+    font-size: 1em;
+  }
+  .content_2 .sns_link {
+    margin-right: 50px;
+    padding-top: 60px;
+  }
+  .content_2 .picture {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+  .content_2 .picture img {
+    width: 90%;
+    margin-top: 10px;
+  }
+  .content_2 .youtube {
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .content_2 .youtube img {
+    width: 90%;
+  }
+  .content_2 .youtube3_img {
+    display: none;
+  }
+  .content_3 .circle_img {
+    padding: 0 15px;
+  }
+  footer {
+    height: 50px;
+  }
+  footer .bottom_menu {
+    display: none;
+  }
+  footer .copyright {
+    line-height: 50px;
+  }
 }

@@ -1,14 +1,11 @@
-let contentImg = document.querySelector(".content1_slide");
-window.addEventListener("scollY", function () {
-  let value = window.scroll;
-  console.log("scrollY", value);
-
-  if (value > 500) {
-    contentImg.style.animation = "disappear 1s ease-out";
-  }
+//모바일메뉴
+$(".openMOgnb").click(function (e) {
+  e.preventDefault();
+  $("header").addClass("on");
+  $("header .header_cont").slideDown("fast");
 });
-
-// //텍스트 깜빡임
-// setInterval(function () {
-//   $(".blink").toggle();
-// }, 700);
+$(".closePop").click(function (e) {
+  e.preventDefault();
+  $("header .header_cont").slideup("fast");
+  $("header").removeClass("on");
+});

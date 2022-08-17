@@ -234,7 +234,7 @@ table {
 }
 
 /* 스킵메뉴 */
-.skipnavi {
+.skip-menu {
   position: absolute;
   left: 0;
   z-index: 999999;
@@ -243,8 +243,8 @@ table {
   text-indent: -9999px;
   top: -50px;
 }
-.skipnavi li a:focus,
-.skipnavi li a:active {
+.skip-menu li a:focus,
+.skip-menu li a:active {
   position: absolute;
   left: 0;
   top: 50px;
