@@ -364,8 +364,7 @@ section.content_3 p:after {
 section.content_3 .circle_img .circle_top,
 section.content_3 .circle_img .circle_bottom {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding-top: 50px;
 }
 section.content_3 img {
@@ -584,9 +583,6 @@ footer {
   .content_2 .youtube3_img {
     display: none;
   }
-  .content_3 .circle_img {
-    padding: 0 15px;
-  }
 }
 
 /* ================ 모바일 ================ */
@@ -658,11 +654,14 @@ footer {
   }
   .swiper .roll_text {
     margin-left: -130px;
-    font-size: 2.7em;
-    margin-right: 50px;
+    font-size: 2.6em;
   }
   .swiper-slide.imglist02 .sub_img01 {
     z-index: 1;
+  }
+  .swiper-slide.imglist02 .sub_img01 img {
+    width: 300px;
+    margin-left: 220px;
   }
   .swiper-slide .more_button {
     z-index: 999;
@@ -670,28 +669,30 @@ footer {
   .swiper-slide .sub_img02.slide {
     z-index: 9999;
     position: absolute;
-    top: 15%;
-    margin-left: -190px;
+    top: 18%;
+    margin-left: -205px;
+  }
+  .swiper-slide .sub_img02.slide img {
+    width: 350px;
   }
   section.content_1 > h2,
   section.content_3 > h2 {
-    font-size: 5em;
+    font-size: 4em;
   }
   section.content_2 .container > h2 {
-    font-size: 5em;
+    font-size: 4em;
   }
   .content_1 {
     margin-top: 50px;
   }
   .content1_img {
-    display: flex;
     flex-direction: column;
   }
   .content_1 .right_text {
     position: absolute;
     top: 65%;
     left: 15%;
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
   .content_1 .right_text span {
     line-height: 1.6;
@@ -731,8 +732,19 @@ footer {
   .content_2 .youtube3_img {
     display: none;
   }
+  section.content_3 .circle_img .circle_bottom {
+    margin-top: 0;
+  }
+  section.content_3 .circle_img .circle_top,
+  section.content_3 .circle_img .circle_bottom {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .content_3 .circle_img {
     padding: 0 15px;
+  }
+  .content_3.container p {
+    font-size: 1em;
   }
   footer {
     height: 50px;
