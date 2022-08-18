@@ -479,7 +479,7 @@ footer {
     height: 23px;
     text-indent: -9999px;
     overflow: hidden;
-    background: url(/images/close.png) no-repeat;
+    background: url(../images/close.png) no-repeat;
     background-size: 23px;
   }
   header .header_cont {
@@ -626,7 +626,7 @@ footer {
     height: 23px;
     text-indent: -9999px;
     overflow: hidden;
-    background: url(/images/close.png) no-repeat;
+    background: url(../images/close.png) no-repeat;
     background-size: 23px;
   }
   header .header_cont {
