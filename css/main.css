@@ -594,7 +594,7 @@ footer {
     text-align: center;
     z-index: 200;
   }
-  header h1 {
+  header .logo {
     width: 200px;
     margin: 30px auto;
   }

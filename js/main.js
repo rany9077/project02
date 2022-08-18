@@ -1,11 +1,7 @@
 //모바일메뉴
-$(".openMOgnb").click(function (e) {
-  e.preventDefault();
-  $("header").addClass("on");
-  $("header .header_cont").slideDown("fast");
+$(".header_area .openMOgnb").click(function () {
+  $(".header_menu nav").show();
 });
-$(".closePop").click(function (e) {
-  e.preventDefault();
-  $("header .header_cont").slideup("fast");
-  $("header").removeClass("on");
+$(".header_menu .closePop").click(function () {
+  $(".header_menu").hide();
 });
