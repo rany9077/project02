@@ -433,6 +433,16 @@ footer {
   margin: 80px auto;
   color: #888;
 }
+#top_btn img {
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+  display: inline-block;
+  background: #0052b8;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 
 /* ==========================
          MEDIA QUERY 
@@ -755,5 +765,15 @@ footer {
   footer .copyright {
     line-height: 50px;
     font-size: 0.8em;
+  }
+  #top_btn img {
+    position: fixed;
+    right: 5%;
+    bottom: 7%;
+    display: inline-block;
+    background: #0052b8;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
