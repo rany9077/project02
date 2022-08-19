@@ -77,7 +77,7 @@ nav .mall_icon > a {
   font-weight: 600;
 }
 .depth_2 > li a:hover {
-  color: #0052e8;
+  color: #0052b8;
   padding: 3px;
 }
 
@@ -118,7 +118,7 @@ nav .mall_icon > a {
   letter-spacing: 0.02em;
 }
 .main_visual .more_button:hover {
-  box-shadow: 0px 5px 15px rgba(0, 82, 232, 0.7);
+  box-shadow: 0px 5px 15px rgba(0, 94, 184, 0.7);
   margin-top: 5px;
 }
 .main_visual ul .imglist02 a {
@@ -153,7 +153,7 @@ nav .mall_icon > a {
   font-family: "Roboto";
   position: absolute;
   border: 1px solid;
-  color: #0052e8;
+  color: #0052b8;
   cursor: pointer;
   height: 50px;
   padding: 0 20px;
@@ -256,7 +256,7 @@ section.content_1 > h2 {
 
 /* content_2 */
 section.content_2 {
-  background: linear-gradient(rgba(0, 82, 232, 0.5), rgba(0, 82, 232, 0.1));
+  background: linear-gradient(rgba(0, 94, 184, 0.5), rgba(0, 82, 232, 0.1));
   width: 100%;
 }
 .content_2 .social {
@@ -302,7 +302,7 @@ section.content_2 {
   transition: 0.25s;
 }
 .content_2 .w-btn-outline:hover {
-  background-color: #0052e8;
+  background-color: #0052b8;
   color: #fff;
   letter-spacing: 2px;
   transform: scale(1.1);
@@ -311,7 +311,7 @@ section.content_2 {
 .content_2 .social p {
   margin-top: -20px;
   font-family: "Nanum Gothic", sans-serif;
-  color: #0052e8;
+  color: #0052b8;
   position: relative;
   z-index: 2;
 }
@@ -359,7 +359,7 @@ section.content_3 p:after {
   height: 10px;
   width: 380px;
   margin: -5px auto;
-  background: rgba(0, 82, 232, 0.4);
+  background: rgba(0, 94, 184, 0.4);
 }
 section.content_3 .circle_img .circle_top,
 section.content_3 .circle_img .circle_bottom {
@@ -368,7 +368,7 @@ section.content_3 .circle_img .circle_bottom {
   padding-top: 50px;
 }
 section.content_3 img {
-  border: 10px solid rgba(0, 82, 232, 0.1);
+  border: 10px solid rgba(0, 94, 184, 0.1);
   border-radius: 50%;
   width: 170px;
   height: 170px;
@@ -376,7 +376,7 @@ section.content_3 img {
   cursor: pointer;
 }
 section.content_3 img:hover {
-  box-shadow: 0px 0px 15px rgba(0, 82, 232, 0.5);
+  box-shadow: 0px 0px 15px rgba(0, 94, 184, 0.5);
   transition: all 0.5s;
   margin-top: 10px;
 }
@@ -465,7 +465,7 @@ footer {
     height: 3px;
     margin-bottom: 4px;
     border-radius: 10px;
-    background: #0052e8;
+    background: #0052b8;
   }
   .header_cont .closePop {
     display: block;
@@ -612,7 +612,7 @@ footer {
     height: 3px;
     margin-bottom: 4px;
     border-radius: 10px;
-    background: #0052e8;
+    background: #0052b8;
   }
   .header_cont .closePop {
     display: block;
