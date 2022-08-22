@@ -596,7 +596,7 @@ footer {
 }
 
 /* ================ 모바일 ================ */
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   #wrap .container {
     width: 100%;
   }
@@ -697,6 +697,9 @@ footer {
   }
   .content1_img {
     flex-direction: column;
+  }
+  .content1_img img {
+    width: 100%;
   }
   .content_1 .right_text {
     position: absolute;
