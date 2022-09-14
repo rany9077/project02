@@ -119,7 +119,7 @@ nav .mall_icon > a {
 }
 .main_visual .more_button:hover {
   box-shadow: 0px 5px 15px rgba(0, 94, 184, 0.7);
-  margin-top: 5px;
+  transform: scale(1.5);
 }
 .main_visual ul .imglist02 a {
   background: url(../images/main_02.jpg) no-repeat;
@@ -260,7 +260,7 @@ section.content_2 {
   width: 100%;
 }
 .content_2 .social {
-  margin-top: -20px;
+  margin-top: 10px;
 }
 .content_2 .container > h2 {
   font-size: 13em;
@@ -277,6 +277,10 @@ section.content_2 {
   height: 35px;
   line-height: 35px;
   padding-top: 5px;
+}
+.content_2 .sns_link a:hover img {
+  transition: all 0.5s;
+  transform: scale(1.2);
 }
 .content_2 .sns_link a {
   margin-left: 15px;
@@ -343,7 +347,7 @@ section.content_3 > h2 {
   text-align: center;
 }
 section.content_3 .title_small {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 section.content_3 p {
   text-align: center;
@@ -378,7 +382,7 @@ section.content_3 img {
 section.content_3 img:hover {
   box-shadow: 0px 0px 15px rgba(0, 94, 184, 0.5);
   transition: all 0.5s;
-  margin-top: 10px;
+  transform: scale(1.2);
 }
 section.content_3 .circle_img {
   margin-bottom: 30px;
@@ -520,6 +524,12 @@ footer {
   }
   .swiper-slide.imglist02 .sub_img01 {
     z-index: 1;
+  }
+  .swiper-slide .sub_img02.slide {
+    z-index: 9999;
+    position: absolute;
+    top: 18%;
+    left: 25%;
   }
   .swiper-slide .more_button {
     z-index: 999;
@@ -778,5 +788,6 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    z-index: 99999;
   }
 }
